@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- local styling -->
+    <link rel="stylesheet" href="public/css/app.css" />
+    <!-- Import Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <section class="header">
+      <div class="avistaLogo">
+        <img class="img" src="public/images/Logo.PNG" alt="Avista Logo" />
+      </div>
+      <div class="headerTitle">
+        <p class="title-text">
+          Avista's Electric Vehicle Charging Program
+        </p>
+      </div>
+    </section>
+
+    <!-- Main form body -->
+    <section class="container">
+      <!-- Greeting Information -->
+      <article class="greetingContainer mb-4">
+        <div>
+          <h4>RESIDENTIAL APPLICATION</h4>
+          <p class="lead">(for Electric Washington Customers)</p>
+          <p>
+            To join Avista's EV Charging Program! Please complete and submit
+            this application. Once we receive your information, we'll contact
+            you on how to get started.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Form Area -->
+    <!-- Start Customer Information -->
+    <form action="">
+      <section class="container">
+        <h5>Customer Information</h5>
+        <hr />
+        <div class="form-group">
+          <input
+            type="text"
+            id="customerNumberInput"
+            name="customerNumberInput"
+            class="form-control"
+            placeholder="Avista Account Number"
+          />
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="firstNameInput"
+              name="firstNameInput"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="lastNameInput"
+              name="lastNameInput"
+              placeholder="LastName"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="streetAddressInput"
+            name="streetAddressInput"
+            placeholder="Street Address"
+          />
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <input
+              type="text"
+              class="form-control"
+              id="cityInput"
+              name="cityInput"
+              placeholder="City"
+            />
+          </div>
+          <div class="form-group col-md-4">
+            <input
+              class="form-control"
+              type="text"
+              id="stateInput"
+              name="stateInput"
+              value="WA"
+            />
+          </div>
+          <div class="form-group col-md-4">
+            <input
+              type="text"
+              class="form-control"
+              id="zipCodeInput"
+              name="zipCodeInput"
+              placeholder="Zip Code"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input
+              type="tel"
+              class="form-control"
+              id="phoneInput"
+              name="phoneInput"
+              pattern="[0-9]"
+              placeholder="Phone (numbers only)"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              id="emailInput"
+              name="emailInput"
+              placeholder="Email"
+            />
+          </div>
+        </div>
+        <!-- End Customer Information -->
+
+        <hr />
+        <h4>Option 2</h4>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="1234 Main St"
+          />
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            placeholder="Apartment, studio, or floor"
+          />
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity" />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Start Electric Vehicle Information -->
+      <section class="container">
+        <h5 class="mt-5">Electric Vehicle Information</h5>
+        <hr />
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <select name="yearInput" id="yearInput" class="form-control">
+              <option value="">Year</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <select
+              class="form-control"
+              name="manuacturerInput"
+              id="manufacturerInput"
+            >
+              <option value="default">Make</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <select name="makeInput" id="makeInput" class="form-control">
+              <option value="model">Model</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <!-- End Electric Vehicle Information -->
+
+      <!-- Start Additional Information -->
+      <section class="container">
+        <h5 class="mt-5">Additional Information</h5>
+        <hr />
+        <div class="form-group">
+          <label for="evCommuteRegularlyInput"
+            >Do you plan to work regularly with your electric vehicle?</label
+          >
+          <select
+            class="form-control"
+            name="evCommuteRegularlyInput"
+            id="evCommuteRegularlyInput"
+          >
+            <option value="--">-- Please Choose --</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="employerNameInput"
+            >If applicable, what is the name of your employer?</label
+          >
+          <input
+            class="form-control"
+            type="text"
+            id="employerNameInput"
+            name="employerNameInput"
+          />
+        </div>
+        <div class="form-group">
+          <label for="workplaceChargingInput"
+            >Does your employer offer workplace charging for your EV?</label
+          >
+          <select
+            class="form-control"
+            name="workplaceChargingInput"
+            id="workplaceChargingInput"
+          >
+            <option value="--">-- Please Choose --</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="overnightParkingInput"
+            >Where do normally park your EV overnight?</label
+          >
+          <select
+            class="form-control"
+            name="overnightParkingInput"
+            id="overnightParkingInput"
+          >
+            <option value="--">-- Please Choose --</option>
+            <option value="Attached Garage">Attached Garage</option>
+            <option value="Detached Garage">Detached Garage</option>
+            <option value="Carport">Carport</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="wifiConnectionInput"
+            >Is your home connected to a Wi-Fi system?</label
+          >
+          <select
+            class="form-control"
+            name="wifiConnectionInput"
+            id="wifiConnectionInput"
+          >
+            <option value="--">-- Please Choose --</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="homeElectricPanelLocationInput"
+            >Where is the electrical panel located?</label
+          >
+          <input
+            class="form-control"
+            type="text"
+            id="homeElectricPanelLocationInput"
+            name="homeElectricPanelLocationInput"
+          />
+        </div>
+        <div class="form-group">
+          <label for="chargerLocationInput"
+            >In relation to the electric panel, where would you like to locate
+            the charger?</label
+          >
+          <input
+            class="form-control"
+            type="text"
+            id="chargerLocationInput"
+            name="chargerLocationInput"
+          />
+        </div>
+        <div class="form-group">
+          <label for="wallCeilingDescriptionInput"
+            >Which best describes the walls and ceilings for the desired charger
+            location?</label
+          >
+          <select
+            class="form-control"
+            name="wallCeilingDescriptionInput"
+            id="wallCeilingDescriptionInput"
+          >
+            <option value="--">-- Please Choose --</option>
+            <option value="Open Studs">Open Studs</option>
+            <option value="Drywalled">Drywalled but not finished</option>
+            <option value="Finished">Finished</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="plansToMoveInput"
+            >Do you have plans to move in the next three years?</label
+          >
+          <select
+            class="form-control"
+            name="plansToMoveInput"
+            id="plansToMoveInput"
+          >
+            <option value="--">-- Please Choose --</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+      </section>
+      <!-- End Additional Information -->
+    </form>
+    <footer>
+      <p class="footerP">Avista Electric Transporation Department</p>
+      <p class="footerP">Contact info:</p>
+      <p class="footerP">Email: (will link to a form)</p>
+      <p class="footerP">Phone number???</p>
+    </footer>
+  </body>
+  <script src="public/jscript/app.js"></script>
+</html>

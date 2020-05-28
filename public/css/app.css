@@ -1,0 +1,104 @@
+/* color variables */
+:root {
+  --avista-blue: rgb(8, 119, 190);
+  --ligtherGrey: rgb();
+}
+
+/* for devides smaller than 576px */
+.header {
+  height: 7rem;
+  background-color: rgb(8, 119, 190);
+}
+
+.avistaLogo {
+  display: none;
+}
+
+.title-text {
+  padding: 10px;
+  color: white;
+  text-align: left;
+  font-size: 18pt;
+  font-weight: 400;
+}
+
+.sectionHeading {
+  font-weight: 600;
+}
+
+.teslaWaitingListLabel {
+  display: block;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  background-color: lightgrey;
+  padding: 10px 0px 20px 0px;
+}
+
+.footerP:last-child {
+  margin-bottom: 0px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .header {
+    background-color: white;
+    height: 10rem;
+  }
+
+  .avistaLogo {
+    margin: 10px;
+    display: inline-block;
+    float: left;
+    width: 12.4rem;
+    position: relative;
+    z-index: 100;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+
+  .headerTitle {
+    position: relative;
+    top: 34px;
+    height: 75%;
+    z-index: 1;
+    background-color: rgb(8, 119, 190);
+  }
+
+  .title-text {
+    display: relative;
+    text-align: center;
+    color: white;
+    font-size: 24pt;
+  }
+
+    #back-to-top{
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 200px;
+    }
+
+   .appInfo{
+       padding: 15px;
+       border: solid darkgray 1px;
+       border-radius: 25px;
+   }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- local styling -->
+    <link rel="stylesheet" href="public/css/app.css" />
+    <!-- Import Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <section class="header">
+      <div class="avistaLogo">
+        <img class="img" src="public/images/Logo.PNG" alt="Avista Logo" />
+      </div>
+      <div class="headerTitle">
+        <p class="title-text">
+          Avista's Electric Vehicle Charging Program
+        </p>
+      </div>
+    </section>
+
+    <!-- Main form body -->
+    <section class="container">
+      <!-- Greeting Information -->
+      <div class="mb-4">
+        <h4>BUSINESS APPLICATION</h4>
+        <p class="lead">(for Electric Washington Customers)</p>
+      </div>
+    </section>
+
+    <!-- Form Area -->
+    <!-- Start Business Information -->
+    <form action="">
+      <section class="container">
+        <h5>Business Information</h5>
+        <hr />
+        <div class="form-group">
+          <input
+            type="text"
+            id="businessNameInput"
+            name="businessNameInput"
+            class="form-control"
+            placeholder="Business Name"
+          />
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-5">
+            <input
+              type="text"
+              id="facilityAddressInput"
+              name="facilityAddressInput"
+              class="form-control"
+              placeholder="Facility Address"
+            />
+          </div>
+          <div class="form-group col-md-3">
+            <input
+              type="text"
+              id="facilityCityInput"
+              name="facilityCityInput"
+              class="form-control"
+              placeholder="City"
+            />
+          </div>
+          <div class="form-group col-md-2">
+            <input
+              type="text"
+              id="facilityStateInput"
+              name="facilityStateInput"
+              class="form-control"
+              placeholder="State"
+            />
+          </div>
+          <div class="form-group col-md-2">
+            <input
+              type="text"
+              id="facilityZipInput"
+              name="facilityZipInput"
+              class="form-control"
+              placeholder="Zip Code"
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-5">
+            <input
+              type="text"
+              id="mailingAddressInput"
+              name="mailingAddressInput"
+              class="form-control"
+              placeholder="Mailing Address (if different from the facility)"
+            />
+          </div>
+          <div class="form-group col-md-3">
+            <input
+              type="text"
+              id="mailingCityInput"
+              name="mailingCityInput"
+              class="form-control"
+              placeholder="City"
+            />
+          </div>
+          <div class="form-group col-md-2">
+            <input
+              type="text"
+              id="mailingStateInput"
+              name="mailingStateInput"
+              class="form-control"
+              placeholder="State"
+            />
+          </div>
+          <div class="form-group col-md-2">
+            <input
+              type="text"
+              id="mailingZipInput"
+              name="mailingZipInput"
+              class="form-control"
+              placeholder="Zip Code"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-8">
+            <input
+              type="text"
+              class="form-control"
+              id="pointOfContactInput"
+              name="pointOfContactInput"
+              placeholder="Point of Contact"
+            />
+          </div>
+          <div class="form-group col-md-4">
+            <input
+              type="text"
+              class="form-control"
+              id="contactTitleInput"
+              name="contactTitleInput"
+              placeholder="PoC Title"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-7">
+            <input
+              type="text"
+              class="form-control"
+              id="emailInput"
+              name="emailInput"
+              placeholder="E-Mail"
+            />
+          </div>
+          <div class="form-group col-md-5">
+            <input
+              type="tel"
+              pattern="[0-9]"
+              class="form-control"
+              id="phoneInput"
+              name="phoneInput"
+              placeholder="Phone Number"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- End Business Information -->
+
+      <!-- Start Avista Account Information -->
+      <section class="container">
+        <h5 class="mt-5">Avista Account Information</h5>
+        <hr />
+
+        <div class="form-group">
+          <label for="avistaCustomerInput"
+            >Are you a current Avista electric customer in Washington?</label
+          >
+          <select
+            name="avistaCustomerInput"
+            id="avistaCustomerInput"
+            class="form-control"
+          >
+            <option value="--">-- Please Choose --</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="avistaAccountNumberInput">Avista Account Number</label>
+          <input
+            type="text"
+            class="form-control"
+            id="avistaAccountNumberInput"
+            name="avistaAccountNumberInput"
+          />
+        </div>
+      </section>
+      <!-- End Avista Account Information -->
+
+      <!-- Start Employee Information -->
+      <section class="container">
+        <h5 class="mt-5">Employee Information</h5>
+        <hr />
+        <div class="form-group">
+          <label for="numberOfEmployeesInput"
+            >How many employes are at this facility?</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="numberOfEmployeesInput"
+            name="numberOfEmployeesInput"
+          />
+        </div>
+        <div class="form-group">
+          <label for="communtingEmployeesInput"
+            >How many ofyour employees commute to your facility with a plug-in
+            electric vehicle?</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="communtingEmployeesInput"
+            name="communtingEmployeesInput"
+          />
+        </div>
+        <div class="form-group">
+          <label for="numberOfFacilityPortsInput"
+            >How many electric vehicle charging port connections do you
+            currently have available at your facility?</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="numberOfFacilityPortsInput"
+            name="numberOfFacilityPortsInput"
+          />
+        </div>
+      </section>
+      <!-- End Employee Information -->
+
+      <!-- Start Other Information -->
+      <section class="container">
+        <h5 class="mt-5">Other Information</h5>
+        <hr />
+        <div class="form-group">
+          <label for="fleetLightDutyVehiclesInput"
+            >How many light duty fleet vehicles do you have at your
+            facility?</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="fleetLightDutyVehiclesInput"
+            name="fleetLightDutyVehiclesInput"
+          />
+        </div>
+        <div class="form-group">
+          <label for="intrestAddingEvFleetInput"
+            >Are you interested in electric fleet vehicles and/or charging fleet
+            vehicles at your facility?</label
+          >
+          <select
+            name="intrestAddingEvFleetInput"
+            id="intrestAddingEvFleetInput"
+            class="form-control"
+          >
+            <option value="--">-- Please Choose --</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="facilityWifiInput"
+            >Is your facility currently connected to a Wi-Fi system?</label
+          >
+          <select
+            name="facilityWifiInput"
+            id="facilityWifiInput"
+            class="form-control"
+          >
+            <option value="--">-- Please Choose --</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="distanceToPoiInput"
+            >What would you estimate is the average distance in miles from your
+            facility to a major park, shopping, restaurants, and/or similar
+            venues?</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="distanceToPoiInput"
+            name="distanceToPoiInput"
+            placeholder="Distance in miles"
+          />
+        </div>
+        <div class="form-group">
+          <label for="evBenefitsInput"
+            >What benefit would you realize by installing electric vehicle
+            charging for your employees and/or customers?</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="evBenefitsInput"
+            name="evBenefitsInput"
+          />
+        </div>
+      </section>
+
+      <!-- End Other Information -->
+    </form>
+    <footer>
+      <p class="footerP">Avista Electric Transporation Department</p>
+      <p class="footerP">Contact info:</p>
+      <p class="footerP">Email: (will link to a form)</p>
+      <p class="footerP">Phone number???</p>
+    </footer>
+  </body>
+  <script src="public/jscript/app.js"></script>
+</html>
